@@ -25,7 +25,7 @@ SECRET_KEY = '35j+el_qkn)q2u*grs#-8@vvi9ahti=$(zna!%zvduv8d%hwi!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['centuries-predictor.herokuapp.com']
 
 
 # Application definition
