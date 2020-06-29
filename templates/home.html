@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+    <form method="POST" action="/">
+
+        {% csrf_token %}
+
+
+        <div class="form-group">
+            <label for="name">Enter your Name : </label>
+            <input type="text" class="form-control" id="name" name = 'name' placeholder="Adam">
+        </div>
+        <div class="form-group">
+            <label for="year">Enter the year number : </label>
+            <input type="text" class="form-control" id="year" name = 'year' placeholder="2020">
+        </div>
+
+
+
+        <center><button class="btn btn-secondary" type='submit'> Submit </button></center>
+    </form>
+
+    <h1><center><b>Predicted_number_of_till_the_end_of_given_year{{year}} : {{predicted_val}}</b></center></h1>
+
+
+</div>
+{% endblock body %}
